@@ -4,3 +4,21 @@
 # The Administrator can login and add new staff, delete staff, view budget added by staff, generate report and send notification through mail to staffs. 
 
 <a href="https://imgur.com/rzAmBl1"><img src="https://i.imgur.com/rzAmBl1.png" title="source: imgur.com" /></a>
+
+<a href="https://imgur.com/f8bPzSa"><img src="https://i.imgur.com/f8bPzSa.png" title="source: imgur.com" /></a>
+
+<a href="https://imgur.com/FyXT8Ul"><img src="https://i.imgur.com/FyXT8Ul.png" title="source: imgur.com" /></a>
+
+<a href="https://imgur.com/h0dLsPm"><img src="https://i.imgur.com/h0dLsPm.png" title="source: imgur.com" /></a>
+
+<a href="https://imgur.com/cqlM1Yz"><img src="https://i.imgur.com/cqlM1Yz.png" title="source: imgur.com" /></a>
+
+<a href="https://imgur.com/rL2vdxX"><img src="https://i.imgur.com/rL2vdxX.png" title="source: imgur.com" /></a>
+
+<a href="https://imgur.com/CIscnSv"><img src="https://i.imgur.com/CIscnSv.png" title="source: imgur.com" /></a>
+
+<a href="https://imgur.com/wmITa3E"><img src="https://i.imgur.com/wmITa3E.png" title="source: imgur.com" /></a>
+
+<a href="https://imgur.com/cIpl4nt"><img src="https://i.imgur.com/cIpl4nt.png" title="source: imgur.com" /></a>
+
+<a href="https://imgur.com/0Dke3m3"><img src="https://i.imgur.com/0Dke3m3.png" title="source: imgur.com" /></a>
