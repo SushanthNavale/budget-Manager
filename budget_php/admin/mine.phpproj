@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>mine</Name>
+    <ProjectGuid>{4af974cc-5017-4899-89ab-e61f5edd1d18}</ProjectGuid>
+    <RootNamespace>mine</RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="frmadmincollegeadd.php" />
+    <Compile Include="deleteq.php" />
+    <Compile Include="frmadmineventadd.php" />
+    <Compile Include="frmadmincollege.php" />
+    <Compile Include="frmadmincordinatoradd.php" />
+    <Compile Include="frmadmincollegeedit.php" />
+    <Compile Include="frmadminevent.php" />
+    <Compile Include="00frmsimple.php" />
+    <Compile Include="frmadmineventedit.php" />
+    <Compile Include="frmadmincoordinator.php" />
+    <Compile Include="frmadmincoordinatoredit.php" />
+    <Compile Include="frmadminfeedback.php" />
+    <Compile Include="frmcord.php" />
+    <Compile Include="getshow.php" />
+    <Compile Include="00gethint.php" />
+    <Compile Include="teamlist.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajfetch.js" />
+  </ItemGroup>
+</Project>

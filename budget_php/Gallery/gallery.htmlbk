@@ -1,0 +1,209 @@
+<?php
+$mysqli = new mysqli("localhost", "root", "", "abhyuday");
+if ($mysqli === false) {
+die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+?>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>Abhyuday 3.0</title>
+<!-- CSS Files-->
+<link rel="shortcut icon" href="images/final.png" type="image/png"/>
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="stylesheets/homepage.css">
+<link rel="stylesheet" href="stylesheets/skins/teal.css">
+<link rel="stylesheet" href="stylesheets/responsive.css">   
+
+</head>
+<body>
+<!-- HIDDEN PANEL 
+================================================== -->
+<div id="panel">
+	<div class="row">
+		<div class="twelve columns">
+			<img src="images/info.png" class="pics" alt="info">
+			<div class="infotext">
+				Welcome to MSRIT .
+			</div>
+		</div>
+	</div>
+</div>
+<p class="slide">
+	<a href="#" class="btn-slide"></a>
+</p>
+<!-- HEADER
+================================================== -->
+<div class="row">	
+		<div class="four columns">
+			<div class="logo">
+				<img src="images/final.png " ></img>
+				<a href="index.php"><h4>ABHYUDAY 3.0</h4></a>
+			</div>
+		</div>
+		<div class="eight columns noleftmarg">		
+			<nav id="nav-wrap">
+				<ul class="nav-bar sf-menu">
+				
+					<li >
+						<a href="index.php">Home</a>
+					</li>
+					<li >
+						<a href="#">About US</a>
+					</li>
+					
+					<li>
+						<a href="events.php">Events</a>
+					</li>
+					
+					<li>
+						<a href="schedule.html">Schedule</a>	
+					</li>
+					
+					<li>
+						<a href="../try.php">Register</a>
+					<li>
+						<a href="#">Downloads</a>	
+					</li>
+					
+					<li class="current">
+						<a href="contact.php">Contact Us</a>
+					</li>
+					
+				</ul>
+			</nav>
+		</div>	
+</div>
+
+<div class="clear">
+</div>
+<!-- SUBHEADER
+================================================== -->
+<div id="subheader">
+	<div class="row">
+		<div class="twelve columns">
+			<p align="center">
+				 GALLERY
+			</p>
+		</div>
+	</div>
+</div>
+<div class="hr">
+</div>
+<!-- CONTENT 
+================================================== -->
+<div class="row">
+	<div class="twelve columns">
+		<!-- CATEGORIES-->
+		
+	
+	
+	
+	</div>
+</div>
+
+
+		
+		
+		
+		
+<div id="portofolio" class="row">
+	<?php
+	$sql = "SELECT * FROM events" ;
+		if ($result = $mysqli->query($sql)){
+		if ($result->num_rows > 0) {
+while($row = $result->fetch_array()) {
+$name=$row['name'];
+$description=$row['description'];
+$category=$row['category'];
+$image=$row['image'];
+$flag="offstage";
+if($category==1)
+	$flag="onstage";
+	
+	?>
+
+<div class="six columns category  <?php echo"$flag";?>">
+		<h5><?php echo"$name";?></h5>
+		<p>
+			 <?php echo"$description";?>
+		</p>
+		<div class="portofoliothumb">
+			<div class="portofoliothumboverlay">
+				<div class="viewgallery">
+					<a data-gal="prettyPhoto[gallery]" href="images/temp/folio2.jpg"><img src="<?php echo 'images/$image';?>" class="left galleryicon" alt=""> Gallery</a>
+				</div>
+				<div class="inner">
+					<a class="projectdetail" href="portofoliodetail.html">+ Project Details</a>
+				</div>
+			</div>
+			<img src="images/temp/folio2.jpg" alt=""/>
+		</div>
+	</div>
+	
+	<?php	}
+		}
+}?>
+	
+
+</div>
+<div class="hr">
+</div>
+<!-- FOOOTER 
+================================================== -->
+<div id="footer">
+	<footer class="row">
+	
+	<div class="four columns">
+		<h1>GET SOCIAL</h1>
+		<div class="social facebook">
+			<a href="#"></a>
+		</div>
+		<div class="social twitter">
+			<a href="#"></a>
+		</div>
+		<div class="social deviantart">
+			<a href="#"></a>
+		</div>
+		<div class="social flickr">
+			<a href="#"></a>
+		</div>
+		<div class="social dribbble">
+			<a href="#"></a>
+		</div>
+	</div>
+	
+	</footer>
+</div>
+<div class="copyright">
+	<div class="row">
+		<div class="six columns">
+			 &copy;<span class="small"> Copyright 2016 Abhyuday 3.0</span>
+		</div>
+		<div class="six columns">
+			<span class="small floatright"> Designed and Developed by Anand and Lalith</span>
+		</div>
+	</div>
+</div>
+<!-- JAVASCRIPTS 
+================================================== -->
+<!-- Javascript files placed here for faster loading -->
+<script src="javascripts/foundation.min.js"></script>
+<script src="javascripts/jquery.cycle.js"></script>
+<script src="javascripts/app.js"></script>
+<script src="javascripts/modernizr.foundation.js"></script>
+<script src="javascripts/slidepanel.js"></script>
+<script src="javascripts/scrolltotop.js"></script>
+<script src="javascripts/hoverIntent.js"></script>
+<script src="javascripts/superfish.js"></script>
+<script src="javascripts/responsivemenu.js"></script>
+<script src="javascripts/jquery.tweet.js"></script>
+<script src="javascripts/twitterusername.js"></script>
+<script src="javascripts/jquery.isotope.min.js"></script>
+<script src="javascripts/jquery.prettyPhoto.js"></script>
+<script src="javascripts/custom.js"></script>
+</body>
+</html>
